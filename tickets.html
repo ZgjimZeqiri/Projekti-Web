@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body-tickets">
+    <ul class="navbar">
+        <li><a href="" class="links-navbar">Home</a></li>
+        <li><a href="" class="links-navbar">about</a></li>
+        <li><a href="" class="links-navbar">gallery</a></li>
+        <li><a href="" class="links-navbar">shop</a></li>
+        <li><a href="" class="links-navbar">tickets</a></li>
+        <li><a href="" class="links-navbar">profile</a></li>
+
+
+    </ul>
+
+    <div class="calendar">
+        <div class="left-side-calendar">
+            <p class="season-title">2022-2023</p>
+
+            <button id="1" class="month-name current"
+                onclick="combined(january.startIndex , january.daysTotal, 1,january.name)">January</button>
+            <button id="2" class="month-name "
+                onclick="combined(february.startIndex , february.daysTotal, 2,february.name)">February</button>
+            <button id="3" class="month-name"
+                onclick="combined(march.startIndex , march.daysTotal, 3,march.name)">March</button>
+            <button id="4" class="month-name"
+                onclick="combined(april.startIndex , april.daysTotal, 4,april.name)">April</button>
+            <button id="5" class="month-name"
+                onclick="combined(may.startIndex , may.daysTotal, 5,may.name)">May</button>
+            <button id="6" class="month-name"
+                onclick="combined(june.startIndex , june.daysTotal, 6,june.name)">june</button>
+
+
+
+        </div>
+        <div class="main-calendar">
+            <p class="season-title main-text" id="main-text">january</p>
+            <div class="line"></div>
+            <br>
+            <div class="box">
+                <div class="grow-7">
+                    <p class="days-calendar">Mon</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">tue</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">wed</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">thu</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">fri</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">sat</p>
+                </div>
+                <div class="grow-7">
+                    <p class="days-calendar">sun</p>
+                </div>
+            </div>
+            <br>
+            <div id="container-calendar">
+
+            </div>
+           
+        </div>
+        <div class="tickets-side" style="padding:20px">
+            <p class="tickets-right-side-title" id="date-game">22.01.2020</p>
+            <div class="box">
+                <div class="grow-5">
+                    <img src="./images/trepca_fav_icon.png" class="img-vs img-custom" alt="fsdfsd">
+                      
+                </div>
+                <div class="grow-2">
+                    <p class="img-middle-text">vs</p>
+                       
+                </div>
+                <div class="grow-5">
+                    <img src="./images/Ylli.jpg" class="img-vs img-custom" alt="fsdfsd">
+                        
+                </div>
+            </div>
+            <div class="box">
+                <div class="grow-5"> 
+                    <p class="img-middle-text-second">Kb trepca</p>
+                </div>
+                <div class="grow-2"></div>
+                <div class="grow-5">
+                    <p class="img-middle-text-second">Kb vllaznimi</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="padding">
+                <div class="box">
+                    <div class="grow-1">
+                        <img src="./images/location-pin.png" class="icon-right-side-tickets" alt="">
+                    </div>
+                    <div class="grow-5">
+                        <p class="text-ticket">LOCATION: MINATORI, MITROVICE</p>
+                    </div>
+                </div>
+                <br>
+                <div class="box">
+                    <div class="grow-1">
+                        <img src="./images/clock.png" class="icon-right-side-tickets" alt="">
+                           
+                    </div>
+                    <div class="grow-5">
+                        <p class="text-ticket">Time: 19:00</p>
+                         
+                    </div>
+                </div>
+                <br>
+                <div class="box">
+                    <div class="grow-1"> <img src="./images/multiple-users-silhouette.png" class="icon-right-side-tickets" alt="">
+                    </div>
+                    <div class="grow-5"><p class="text-ticket">Venue capacity: 3000 tickets</p>
+                    </div>
+                </div>
+                <br>
+                <div class="box">
+                    <div class="grow-1"> <img src="./images/check.png" class="icon-right-side-tickets" alt="">
+                    </div>
+                    <div class="grow-5">
+                        <p class="text-ticket">Available: 491 tickets</p>
+                           
+                    </div>
+                </div>
+                
+            </div>
+            
+            <a class="button-custom button-buy-tickets" href="checkout.html" role="button">Buy tickets</a>
+        
+           
+        </div>
+
+    </div>
+  
+    <script src="js.js"></script>
+</body>
+
+</html>
